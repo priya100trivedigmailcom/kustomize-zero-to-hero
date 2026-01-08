@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-app
+  name: web-application
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web-app
+      app: web-application
   template:
     metadata:
       labels:
-        app: web-app
+        app: web-application
     spec:
       containers:
-      - name: web-app
+      - name: web-application
         image: nginx:1.19
         ports:
         - containerPort: 80
